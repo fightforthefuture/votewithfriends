@@ -280,7 +280,7 @@ body > header{
     }
 
 
-input{
+#register input{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -430,7 +430,35 @@ textarea{
     overflow: hidden;
 }
 
+#countdown{
+    display: none;
+    width: 266px;
+}
+
+
 /* From PSD2HTML */
+
+img {border-style:none;}
+a {
+    text-decoration:none;
+    color:#0c6dbc;
+}
+a:hover {text-decoration:underline;}
+
+
+
+.banner-holder:after,
+.block .holder:after,
+.container .form-register .holder:after,
+.container-holder:after,
+.social-frame:after,
+.social-frame .join-form:after,
+.join-form .holder:after,
+.social-holder:after{
+    display:block;
+    content:"";
+    clear:both;
+}
 
 #main{
     overflow:hidden;
@@ -563,13 +591,13 @@ textarea{
     width:237px;
     color:#8a8a8a;
     padding:9px 11px;
-    height:18px;
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     font:bold 14px/18px Helvetica, Arial, sans-serif;
     border:1px solid;
     border-width:#b7b7b7 #ddd #f1f1f1;
+    height: ;
 }
 .container .short{width:231px !important;}
 .form-register .btn{
@@ -902,7 +930,7 @@ textarea{
 .text-block .btn-blue{
     padding:10px 14px;
     margin:0 0 6px;
-    height:23px;
+    height:43px;
     font:20px/23px 'Montserrat', Arial, Helvetica, sans-serif;
     border-radius: 5px;
     -moz-border-radius: 5зx;
@@ -1027,7 +1055,7 @@ textarea{
     cursor:pointer;
     color:#fff;
     padding:2px 10px 4px;
-    height:24px;
+    height:30px;
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
