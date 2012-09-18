@@ -23,9 +23,10 @@
                 return str;
             },
             setTime = function(){
-                var end = new Date(2012, 9, 25, 0, 0, 0),
+                var end = new Date(2012, 8, 25, 0, 0, 0),
                     now = new Date(),
                     difference = (end - now);
+					
                 if(difference > 0){
                     $countdown.show();
                 }else{
