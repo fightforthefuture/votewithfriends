@@ -168,66 +168,34 @@ body > header{
 
 #action-day{
     width: 375px;
-    background: #F0F0F0 url(/images/noise.png);
+/*    background: #F0F0F0 url(/images/noise.png);*/
     position: relative;
     padding: 0 0 28px;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
+	margin-top: 85px;
+	
+	-moz-border-radius: 5px; /* from vector shape */
+	-webkit-border-radius: 5px; /* from vector shape */
+	border-radius: 5px; /* from vector shape */
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; /* prevents bg color from leaking outside the border */
+	background-color: rgba(157,129,96,.69); /* color overlay */
+	-moz-box-shadow: inset 0 2px 5px rgba(0,0,0,.75); /* inner shadow */
+	-webkit-box-shadow: inset 0 2px 5px rgba(0,0,0,.75); /* inner shadow */
+	box-shadow: inset 0 2px 5px rgba(0,0,0,.75); /* inner shadow */
+	
 }
 
-    #action-day:before,
-    #action-day:after{
-        position: absolute;  
-        width: 40%;  
-        height: 10px;  
-        content: '\A0';  
-        left: 3px;  
-        bottom: 4px;
-        background: #F0F;  
-        -webkit-transform: skew(-2deg) rotate(-2deg);  
-        -moz-transform: skew(-2deg) rotate(-2deg);  
-        -ms-transform: skew(-2deg) rotate(-2deg);  
-        -o-transform: skew(-2deg) rotate(-2deg);  
-        transform: skew(-2deg) rotate(-2deg);  
-        -webkit-box-shadow: 0 6px 24px rgba(0, 0, 0, 0.75);  
-        -moz-box-shadow: 0 6px 24px rgba(0, 0, 0, 0.75);  
-        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.75);  
-        z-index: -1;  
-    }
-
-    #action-day:after {
-        left: auto;  
-        right: 3px;  
-        -webkit-transform: skew(2deg) rotate(2deg);  
-        -moz-transform: skew(2deg) rotate(2deg);  
-        -ms-transform: skew(2deg) rotate(2deg);  
-        -o-transform: skew(2deg) rotate(2deg);  
-        transform: skew(2deg) rotate(2deg);
-    }
 
     #action-day > header{
         position: relative;
+		float: left;
+		margin-top: -105px;
     }
 
-        #action-day > header:before{
-            content: '\A0';
-            background: rgb(246,197,1);
-            background: -moz-linear-gradient(top, rgba(246,197,1,1) 0%, rgba(255,232,96,1) 100%);
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(246,197,1,1)), color-stop(100%,rgba(255,232,96,1)));
-            background: -webkit-linear-gradient(top, rgba(246,197,1,1) 0%,rgba(255,232,96,1) 100%);
-            background: -o-linear-gradient(top, rgba(246,197,1,1) 0%,rgba(255,232,96,1) 100%);
-            background: -ms-linear-gradient(top, rgba(246,197,1,1) 0%,rgba(255,232,96,1) 100%);
-            background: linear-gradient(to bottom, rgba(246,197,1,1) 0%,rgba(255,232,96,1) 100%);
-            height: 9px;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            -webkit-box-shadow: inset 0 0 1px 0 rgba(255, 255, 255, 0.66),
-                                0 1px 1px 0 rgba(0, 0, 0, 0.33);
-            box-shadow: inset 0 0 1px 0 rgba(255, 255, 255, 0.66),
-                        0 1px 1px 0 rgba(0, 0, 0, 0.33);
-        }
+
 
     #action-day *{
         z-index: 1;
@@ -237,6 +205,7 @@ body > header{
         background: url(/images/cal.png) no-repeat 24px 15px;
         text-indent: -999em;
         overflow: hidden;
+
     }
     #action-day h2{
         background: url(/images/ribbon.png) no-repeat 0 0;
@@ -261,6 +230,9 @@ body > header{
     #action-day form{
         padding: 0 28px;
     }
+	#action-day a{
+		color: #fff;
+	}
 
 #code{
     width: 375px;
