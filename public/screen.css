@@ -412,7 +412,7 @@ textarea{
 	        border: 0;
 	        background: rgba(157, 129, 96, .69);
 	        color: #000;
-	        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+	        text-shadow: none;
 	        font-size: 11px;
 	        width: auto;
 	        height: auto;
