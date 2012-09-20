@@ -90,7 +90,7 @@ em {font-style: italic;}
 
 body{
     font: 14px/1.58 'Helvetica Neue', 'Helvetica', sans-serif;
-    background: url(/images/wood.png);
+    background: url(/images/wood2.png);
 }
 
 .inner{
@@ -116,42 +116,53 @@ body > header{
         background: linear-gradient(to bottom, rgba(52,79,144,0) 10%,rgba(52,79,144,0.9) 100%),
                     #6984c5 url(/images/fabric.png);
     }
+
+    #logo{
+        margin: -20px auto 0 auto;
+        width: 420px;
+    }
+
     body > header .inner{
-        min-height: 203px;
+        min-height: 118px;
         position: relative;
     }
     body > header h1{
-        width: 299px;
-        height: 203px;
-        background: url(/images/logo.png) no-repeat;
+        width: 420px;
+        height: 247px;
+        background: url(/images/logo_new.png) no-repeat;
         text-indent: -999em;
-        overflow: hidden;
+/*        overflow: hidden;
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: 0;*/
     }
 
 
 #intro{
-    padding: 29px 0px 4px 398px;
+    /*padding: 29px 0px 4px 398px;*/
     text-align: center;
     text-shadow: 0 1px 1px #000;
+    margin: -94px auto;
+    width: 645px;
 }
     .rgba #intro{
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
     }
     #intro h2{
         color: #f9cf1d;
-        font: 17px/1.32 'Montserrat', sans-serif;
+        font: 21px/1.32 'Montserrat', sans-serif;
     }
     #intro p{
         font-weight: bold;
         color: #FFF;
         margin-top: 8px;
+        font-size: 19px;
+        margin-bottom: 13px;
     }
 
 #register{
     position: relative;
+
 }
     #register:before{
         content: '\A0';
@@ -159,11 +170,11 @@ body > header{
         width: 100%;
         background: url(/images/border.png) repeat-x top;
         position: absolute;
-        top: -10px;
+        top: 80px;
         left: 0;
     }
     #register .inner{
-        padding: 40px 20px;
+        padding: 130px 20px;
     }
 
 #action-day{
@@ -237,14 +248,13 @@ body > header{
 #code{
     width: 375px;
     margin-top: 35px;
-    line-height: 0;
 }
     #code:after{
         content: url(/images/arrow.png);
         position: relative;
         z-index: 99999;
-        top: -130px;
-        right: -385px;
+        top: -30px;
+        right: -295px;
     }
     #code h1{
         font: 46px/1 'Playball', cursive;
@@ -255,9 +265,9 @@ body > header{
 
 #twitter{
     position: absolute;
-    top: 10px
+    top: 20px
     left: 10px;
-    margin: 10px 0px 10px 10px;
+    margin: 30px 0px 10px 10px;
     z-index: 650;
 }
 
@@ -334,24 +344,24 @@ button{
         content: '\2713\A0';
         font: normal 15px/1 'Helvetica Neue', 'Helvetica', sans-serif;
     }
+	
+	.form-register button:before {display: none;}
 
 textarea{
     width: 100%;
     background: #FFF;
     border: 0;
-    padding: 0 15px 15px;
+    padding: 15px;
     height: 100px;
     font: 12px/1.42 monospace;
     color: #333;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
     -webkit-border-radius: 5px;
     border-radius: 5px;
     outline: 0;
-    margin: 0;
+    margin-top: 11px;
 }
-    .js textarea{
-        -webkit-border-radius: 0 0 5px 5px;
-        border-radius: 0 0 5px 5px;
-    }
     textarea::selection{
         background: #222;
         color: #000;
@@ -360,66 +370,79 @@ textarea{
         background: #222;
         color: #000;
     }
-
-#append{
-    margin-top: 15px;
-}
-    #append p,
-    #append button{
-        display: none;
-    }
-    #append p{
-        line-height: 1;
-        background: #FFF;
-        padding: 15px 10px 10px 15px;
-        border-radius: 5px 0 0 0;
-        position: relative;
-        clear: both;
-        text-align: right;
-    }
-        #append p span{
-            background: url(/images/code-banner.png) no-repeat;
-            display: block;
-            height: 36px;
-            width: 366px;
-            position: relative;
-            left: -19px;
-            text-align: left;
-            padding-top: 11px;
-            color: white;
-            font-size: 14px;
-            padding-left: 20px;
-            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
-        }
-    #append button{
-        border: 0;
-        background: rgba(157, 129, 96, .69);
-        color: white;
-        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
-        font-size: 11px;
-        width: auto;
-        height: auto;
-        display: inline;
-        padding: 7px 10px 6px;
-        margin: 0 0 0 6px;
-        -webkit-border-radius: 5px 5px 0 0;
-        border-radius: 5px 5px 0 0;
-        float: right;
-        clear: none;
-    }
-        #append button:before{
-            display: none;
-        }
-        #append button:active,
-        #append button:focus{
-            -moz-box-shadow: none;
-            box-shadow: none;
-        }
-        #append button.active{
-            background: #FFF;
-            color: #111;
-            text-shadow: none;
-        }
+	
+	.js textarea {
+		-webkit-border-radius: 0 0 5px 5px;
+		border-radius: 0 0 5px 5px;
+		margin-top: -10px;
+		padding-bottom: 100px;
+	}
+	
+	#append{
+	    margin-top: 15px;
+	}
+	    #append p,
+	    #append button{
+	        display: none;
+	    }
+	    #append p{
+	        line-height: 1;
+	        background: #FFF;
+	        padding: 15px 10px 10px 15px;
+	        border-radius: 5px 0 0 0;
+	        position: relative;
+	        clear: both;
+	        text-align: right;
+	    }
+	        #append p span{
+	            background: url(/images/code-banner.png) no-repeat;
+	            display: block;
+	            height: 36px;
+	            width: 366px;
+	            position: relative;
+	            left: -19px;
+	            text-align: left;
+	            padding-top: 11px;
+	            color: white;
+	            font-size: 14px;
+	            padding-left: 20px;
+	            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+	        }
+	    #append button{
+	        border: 0;
+	        background: rgba(157, 129, 96, .69);
+	        color: #000;
+	        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+	        font-size: 11px;
+	        width: auto;
+	        height: auto;
+	        display: inline;
+	        padding: 7px 10px 6px;
+	        margin: 0 0 0 6px;
+	        -webkit-border-radius: 5px 5px 0 0;
+	        border-radius: 5px 5px 0 0;
+	        float: right;
+	        clear: none;
+			background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FmYjdiYiIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTElIiBzdG9wLWNvbG9yPSIjYzdjZGNmIiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIzNyUiIHN0b3AtY29sb3I9IiNlNWU3ZTciIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU3ZTciIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==); /* gradient overlay */
+			background-image: -moz-linear-gradient(90deg, #afb7bb 0%, #c7cdcf 11.25%, #e5e7e7 37.26%, #e5e7e7 100%); /* gradient overlay */
+			background-image: -o-linear-gradient(90deg, #afb7bb 0%, #c7cdcf 11.25%, #e5e7e7 37.26%, #e5e7e7 100%); /* gradient overlay */
+			background-image: -webkit-linear-gradient(90deg, #afb7bb 0%, #c7cdcf 11.25%, #e5e7e7 37.26%, #e5e7e7 100%); /* gradient overlay */
+			background-image: linear-gradient(90deg, #afb7bb 0%, #c7cdcf 11.25%, #e5e7e7 37.26%, #e5e7e7 100%); /* gradient overlay */
+			
+	    }
+	        #append button:before{
+	            display: none;
+	        }
+	        #append button:active,
+	        #append button:focus{
+	            -moz-box-shadow: none;
+	            box-shadow: none;
+	        }
+	        #append button.active{
+	            background: #FFF;
+	            color: #111;
+	            text-shadow: none;
+	        }
 
 ::-webkit-input-placeholder {
     color: #777;
@@ -444,7 +467,7 @@ textarea{
 
 #voterreg_frame{
     position: absolute !important;
-    top: 243px !important;
+    top: 293px !important;
     left: 50% !important;
     width: 380px !important;
     height: 464px !important;
@@ -502,6 +525,8 @@ a:hover {text-decoration:underline;}
     content:"";
     clear:both;
 }
+
+.inner .container {margin-top: 100px; margin-bottom: 0;}
 
 #main{
     overflow:hidden;
@@ -643,6 +668,12 @@ a:hover {text-decoration:underline;}
     height: ;
 }
 .container .short{width:231px !important;}
+.form-register button.btn {
+	float: none;
+	clear: none;
+	position: static;
+}
+
 .form-register .btn{
     margin:0 0 0 6px;
     width:116px;

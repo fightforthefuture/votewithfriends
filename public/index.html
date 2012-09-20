@@ -22,12 +22,13 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 </div>
-
+         <div id="logo"><h1>The Internet Votes with Friends</h1></div>   
+         
             <div class="inner">
-                <h1>The Internet Votes with Friends</h1>
+               
                 <div id="intro">
                     <h2>In 2012, we changed the world with the SOPA blackout -- but we're not done until Washington hears us in the election.</h2>
-                    <p>After internet censorship almost became law, it's no longer okay for internet users to not vote. Help get more internet users than ever to vote this election.</p>
+                    <p>Help us get more Internet users to vote than ever before.</p>
                 </div>
             </div>
         </header>
@@ -35,7 +36,7 @@
         <div id="register">
             <div class="inner">
 
-                <section id="action-day">
+                <!-- <section id="action-day">
                     <header>
                         <h1>September 25th</h1>
                         <h2>Our first day of action: <strong>National Voter Registration Day, 9/25</strong></h2>
@@ -57,66 +58,81 @@
                         <a href="http://www.fightforthefuture.org/privacy" class="privacy">Privacy Policy</a>
                     </form>
                 </section>
+ -->
+				 <section id="code">
+				     <header>
+				         <h1>Get this for your site</h1>
+				     </header>
+				     <div id="append" data-append-target="#code textarea">
+				         <button data-append="&lt;div id=&quot;voterreg_placeholder&quot;>&lt;/div>" data-info="Add this where you'd like the widget to appear.">Widget</button>
+				         <button data-append="" data-info="Add this before your closing &lt;/body> tag.">Modal Window</button>
+				         <p data-append-info="true"></p>
+				     </ul>
+				     <textarea>&lt;script src="//www.votewithfriends.net/widget/include.js" type="text/javascript" async="async" defer="defer"&gt;&lt;/script&gt;</textarea>
+				 </section>
+                
 
-                <section id="code">
-                    <header>
-                        <h1>Get this for your site</h1>
-                    </header>
-                    <div id="append" data-append-target="#code textarea">
-                        <button data-append="&lt;div id=&quot;voterreg_placeholder&quot;>&lt;/div>" data-info="Add this where you'd like the widget to appear.">Widget</button>
-                        <button data-append="" data-info="Add this before your closing &lt;/body> tag.">Modal Window</button>
-                        <p data-append-info="true"></p>
-                    </ul>
-                    <textarea>&lt;script src="//www.votewithfriends.net/widget/include.js" type="text/javascript" async="async" defer="defer"&gt;&lt;/script&gt;</textarea>
-                </section>
+
+                <article class="container">
+                    <div class="container-holder">
+                        <div id="countdown" class="box alignright">
+                            <ul class="counter">
+                                <li>
+                                    <strong class="number" id="days"></strong>
+                                    <p>Days</p>
+                                </li>
+                                <li>
+                                    <strong class="number" id="hours"></strong>
+                                    <p>Hours</p>
+                                </li>
+                                <li>
+                                    <strong class="number" id="minutes"></strong>
+                                    <p>Minutes</p>
+                                </li>
+                                <li>
+                                    <strong class="number" id="seconds"></strong>
+                                    <p>Seconds</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <em class="description">Orgs, Websites, Groups, Internet users:</em>
+                        <em class="date">Join us for National Voter Registration Day, September 25th</em>
+                        <p>Just before a series of state deadlines for voter registration, we can register as many people who need help registering as possible.  We need your help to do it - can your website or group participate?</p>
+                        <div class="form-register">
+                            <form action="http://nt.salsalabs.com/save">
+									
+		                        <input type="hidden" name="object" value="supporter" />
+		                        <input type="hidden" name="tag" value="internetvotes.org/#form-register" />
+		                        <input type="hidden" name="ip" id="signup_ip" />
+		                        <input type="hidden" name="user_agent" id="user_agent" />
+		                        <input type="hidden" name="email_trigger_KEYS" value="10" />
+		                        <input type="hidden" name="redirect" value="http://internetvotes.org/confirm" /> 
+		                        <input type="hidden" name="organization_KEY" value="501" />
+									
+									
+                                <fieldset>
+                                    <div class="holder">
+                                        <input type="text" placeholder="Email" name="Email" value="" />
+                                        <input class="short" type="text" placeholder="Website (Optional)" name="Web_Page" value="" />
+                                        <button class="btn"><span class="ico-register">Join in</span></button>
+                                    </div>
+                                    <a href="http://www.fightforthefuture.org/privacy" class="license">Privacy policy</a>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <img src="images/img-decor2.png" alt="" class="decor2" width="113" height="160" >
+                    </div>
+                </article>
 
             </div>
         </div>
 
+
+
         <section id="main">
             <div class="main-holder">
                 <div class="wrap">
-                    <article class="container">
-                        <div class="container-holder">
-                            <div id="countdown" class="box alignright">
-                                <ul class="counter">
-                                    <li>
-                                        <strong class="number" id="days"></strong>
-                                        <p>Days</p>
-                                    </li>
-                                    <li>
-                                        <strong class="number" id="hours"></strong>
-                                        <p>Hours</p>
-                                    </li>
-                                    <li>
-                                        <strong class="number" id="minutes"></strong>
-                                        <p>Minutes</p>
-                                    </li>
-                                    <li>
-                                        <strong class="number" id="seconds"></strong>
-                                        <p>Seconds</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <em class="description">Orgs, Websites, Groups, Internet users:</em>
-                            <em class="date">Join us for National Voter Registration Day, September 25th</em>
-                            <p>Just before a series of state deadlines for voter registration, we can register as many people who need help registering as possible.  We need your help to do it - can your website or group participate?</p>
-                            <div class="form-register">
-                                <form action="#">
-                                    <fieldset>
-                                        <div class="holder">
-                                            <input type="text" placeholder="Email" value="" />
-                                            <input class="short" type="text" placeholder="Website (Optional)" value="" />
-                                            <a href="#" class="btn"><span class="ico-register">Join in</span></a>
-                                        </div>
-                                        <a href="http://www.fightforthefuture.org/privacy" class="license">Privacy policy</a>
-                                    </fieldset>
-                                </form>
-                            </div>
-                            <img src="images/img-decor2.png" alt="" class="decor2" width="113" height="160" >
-                        </div>
-                        <img src="images/img-decor1.png" alt="" class="decor1" width="1027" height="565" >
-                    </article>
+                 
                     <article class="area">
                         <div class="heading-container">
                             <div class="heading-holder">
