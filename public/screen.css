@@ -237,6 +237,7 @@ body > header{
 #code{
     width: 375px;
     margin-top: 35px;
+    line-height: 0;
 }
     #code:after{
         content: url(/images/arrow.png);
@@ -338,17 +339,19 @@ textarea{
     width: 100%;
     background: #FFF;
     border: 0;
-    padding: 15px;
+    padding: 0 15px 15px;
     height: 100px;
     font: 12px/1.42 monospace;
     color: #333;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.35);
     -webkit-border-radius: 5px;
     border-radius: 5px;
     outline: 0;
-    margin-top: 11px;
+    margin: 0;
 }
+    .js textarea{
+        -webkit-border-radius: 0 0 5px 5px;
+        border-radius: 0 0 5px 5px;
+    }
     textarea::selection{
         background: #222;
         color: #000;
@@ -357,6 +360,66 @@ textarea{
         background: #222;
         color: #000;
     }
+
+#append{
+    margin-top: 15px;
+}
+    #append p,
+    #append button{
+        display: none;
+    }
+    #append p{
+        line-height: 1;
+        background: #FFF;
+        padding: 15px 10px 10px 15px;
+        border-radius: 5px 0 0 0;
+        position: relative;
+        clear: both;
+        text-align: right;
+    }
+        #append p span{
+            background: url(/images/code-banner.png) no-repeat;
+            display: block;
+            height: 36px;
+            width: 366px;
+            position: relative;
+            left: -19px;
+            text-align: left;
+            padding-top: 11px;
+            color: white;
+            font-size: 14px;
+            padding-left: 20px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+        }
+    #append button{
+        border: 0;
+        background: rgba(157, 129, 96, .69);
+        color: white;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+        font-size: 11px;
+        width: auto;
+        height: auto;
+        display: inline;
+        padding: 7px 10px 6px;
+        margin: 0 0 0 6px;
+        -webkit-border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px 0 0;
+        float: right;
+        clear: none;
+    }
+        #append button:before{
+            display: none;
+        }
+        #append button:active,
+        #append button:focus{
+            -moz-box-shadow: none;
+            box-shadow: none;
+        }
+        #append button.active{
+            background: #FFF;
+            color: #111;
+            text-shadow: none;
+        }
 
 ::-webkit-input-placeholder {
     color: #777;

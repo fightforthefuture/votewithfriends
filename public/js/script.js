@@ -10,6 +10,28 @@
             $(this).focus().select();
         });
 
+        var $appenders = $('[data-append-target]').show();
+        $appenders.each(function(index, appender){
+            var $appender = $(appender),
+                $target = $($appender.data('append-target')),
+                $buttons = $appender.find('[data-append]'),
+                $info = $appender.find('[data-append-info]').show();
+            $target.data('original', $target.val());
+            $buttons.click(function(evt){
+                var $button = $(this);
+                $buttons.removeClass('active');
+                $button.addClass('active');
+                evt.preventDefault();
+                var $span = $('<span />',{
+                    'text': $button.data('info')
+                });
+                $info.children().remove();
+                $span.appendTo($info);
+                $target.val($target.data('original') + $button.data('append'));
+            });
+            $buttons.eq(0).click();
+        });
+
         var $countdown = $('#countdown'),
             $days = $('#days'),
             $hours = $('#hours'),
