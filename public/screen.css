@@ -552,8 +552,8 @@ a:hover {text-decoration:underline;}
 }
 
 .container{
-    width:740px;
-    margin:0 auto 49px;
+    width:825px;
+    margin:0 auto;
     position:relative;
     color:#fff;
     font:17px/24px Helvetica, Arial, sans-serif;
@@ -607,12 +607,12 @@ a:hover {text-decoration:underline;}
 }
 .container .decor2{
     position:absolute;
-    top:24px;
-    left:-90px;
+    top:144px;
+    left:-65px;
 }
 .container .box{
     float:right;
-    margin:0 0 0 20px;
+    margin:0 15px 0 00px;
     padding:10px 0 10px 16px;
     overflow:hidden;
     border-radius: 10px;
@@ -648,19 +648,36 @@ a:hover {text-decoration:underline;}
 .container .box .counter p{margin:0;}
 .container .description{
     display:block;
-    padding:13px 0 1px;
-    color:#fff;
+    color:#ffe74d;
+	text-align: center;
     text-shadow: 1px 1px 1px #000;
     font:italic 20px/25px Georgia, serif;
+	margin: 10px 0;
 }
 .container .date{
     display:block;
     padding:0 0 14px;
     text-shadow: 0 1px 1px #000;
-    color:#ffd304;
+    color:#fff;
+	text-align: center;
     font:20px/25px 'Montserrat', Helvetica, sans-serif;
+	display: block;
+	background: url(/images/orange-banner.png) no-repeat;
+	float: left;
+	width: 838px; 
+	height: 74px;
+	padding-top: 13px;
+	margin-left: -40px;
 }
-.container .form-register{overflow:hidden;}
+.container .date span {
+	background: #d96e00; 
+	border-radius: 5px; 
+	padding: 5px 10px; 
+	display: inline-block;
+}
+.container p.details {clear: left; width: 450px; color: #ffeaea; margin-left: 20px;}
+.container #countdown {float: right;}
+.container .form-register{overflow:hidden; margin-left: 20px;}
 .container .form-register .holder{padding:0 0 7px;}
 .container input[type=text]{
     float:left;
@@ -676,7 +693,7 @@ a:hover {text-decoration:underline;}
     border-width:#b7b7b7 #ddd #f1f1f1;
     height: ;
 }
-.container .short{width:231px !important;}
+.container .short, .form-register input {width:301px !important;}
 .form-register button.btn {
 	float: none;
 	clear: none;
@@ -702,8 +719,7 @@ a:hover {text-decoration:underline;}
     background:url(/images/ico6.png) no-repeat 0 50%;
 }
 .container .license{
-    float:right;
-    margin:0 211px 0 0;
+	margin-top: 5px;
     font:normal 11px Helvetica, Arial, sans-serif;
 }
 
@@ -1142,7 +1158,7 @@ a:hover {text-decoration:underline;}
     cursor:pointer;
     color:#fff;
     padding:2px 10px 4px;
-    height:30px;
+    height:36px;
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
