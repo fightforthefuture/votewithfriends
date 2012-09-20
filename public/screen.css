@@ -381,8 +381,9 @@ textarea{
 		-webkit-border-radius: 0 0 5px 5px;
 		border-radius: 0 0 5px 5px;
 		margin-top: -10px;
-		padding-bottom: 100px;
+		height: 130px;
 	}
+	
 	
 	#append{
 	    margin-top: 15px;
@@ -401,7 +402,8 @@ textarea{
 	        text-align: right;
 	    }
 	        #append p span{
-	            background: url(/images/code-banner.png) no-repeat;
+/*	Commenting out rather than deleting because I think removing this is dumb*/			
+/*	            background: url(/images/code-banner.png) no-repeat;*/
 	            display: block;
 	            height: 36px;
 	            width: 366px;
@@ -409,11 +411,12 @@ textarea{
 	            left: -19px;
 	            text-align: left;
 	            padding-top: 11px;
-	            color: white;
+	            color: #000;
+				font-weight: bold;
 	            font-size: 14px;
 	            padding-left: 20px;
-	            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
-	        }
+/*	            text-shadow: 0 1px 1px rgba(1, 0, 0, 0.45);
+*/	        }
 	    #append button{
 	        border: 0;
 	        background: rgba(157, 129, 96, .69);
