@@ -143,14 +143,14 @@ body > header{
     text-align: center;
     text-shadow: 0 1px 1px #000;
     margin: -94px auto;
-    width: 645px;
+    width: 700px;
 }
     .rgba #intro{
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
     }
     #intro h2{
         color: #f9cf1d;
-        font: 21px/1.32 'Montserrat', sans-serif;
+        font: 18px/1.32 'Montserrat', sans-serif;
     }
     #intro p{
         font-weight: bold;
