@@ -173,6 +173,12 @@ body > header{
         top: 80px;
         left: 0;
     }
+	
+	@-moz-document url-prefix() {
+	    #register:before {
+	        top:0px;
+	    }
+	}
     #register .inner{
         padding: 130px 20px;
     }
