@@ -162,7 +162,7 @@ body > header{
 
 #register{
     position: relative;
-    padding-bottom: 100px;
+
 }
     #register:before{
         content: '\A0';
@@ -247,14 +247,14 @@ body > header{
 
 #code{
     width: 375px;
-    margin-top: 35px;
+    margin-top: 135px;
 }
     #code:after{
         content: url(/images/arrow.png);
         position: relative;
         z-index: 99999;
-        top: -130px;
-        right: -385px;
+        top: -30px;
+        right: -295px;
     }
     #code h1{
         font: 46px/1 'Playball', cursive;
@@ -392,7 +392,7 @@ textarea{
 
 #voterreg_frame{
     position: absolute !important;
-    top: 243px !important;
+    top: 293px !important;
     left: 50% !important;
     width: 380px !important;
     height: 464px !important;
@@ -450,6 +450,8 @@ a:hover {text-decoration:underline;}
     content:"";
     clear:both;
 }
+
+.inner .container {margin-top: 100px; margin-bottom: 0;}
 
 #main{
     overflow:hidden;
@@ -591,6 +593,12 @@ a:hover {text-decoration:underline;}
     height: ;
 }
 .container .short{width:231px !important;}
+.form-register button.btn {
+	float: none;
+	clear: none;
+	position: static;
+}
+
 .form-register .btn{
     margin:0 0 0 6px;
     width:116px;
