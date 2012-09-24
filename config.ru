@@ -4,7 +4,9 @@ use Rack::Static , :urls => {
     "/thanks/" => "thanks/index.html", 
     "/thanks" => "thanks/index.html", 
     "/confirm" => "confirm/index.html", 
-    "/confirm/" => "confirm/index.html", 
+    "/confirm/" => "confirm/index.html",
+    "/banners/" => "banners/index.html", 
+    "/banners" => "banners/index.html",
     } , :root => "public"
 
 run Rack::URLMap.new({

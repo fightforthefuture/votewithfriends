@@ -1,0 +1,47 @@
+body{
+	background: url(../images/wood2.png);
+}
+
+#wrap{
+	width: 800px;
+	margin: 0px auto;
+}
+
+#wrap h1{
+	text-align: center;
+	color: #3e0505; /* text color */
+	font-family: "Helvetica", arial, sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+	text-shadow: 0 2px 1px rgba(255,255,255,.51); /* drop shadow */
+	margin-bottom: -15px;
+}
+
+#wrap p{
+	text-align: center;
+	color: #3e0505; /* text color */
+	font-family: "Georgia", serif;
+	font-size: 26px;
+	font-style: italic;
+	text-shadow: 0 2px 1px rgba(255,255,255,.51); /* drop shadow */
+	margin-bottom: 30px;
+}
+
+.banner_square{
+	margin-left: 50px;
+	margin-bottom: 50px;
+	float: left;
+}
+
+
+
+#wrap p.caption {
+	text-align: left;
+	color: #3e0505; /* text color */
+	font-size: 14px;
+	text-shadow: 0 1px 1px rgba(255,255,255,.51); /* drop shadow */
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-family: "Helvetica", arial, sans-serif;
+	font-style: normal;
+}
