@@ -3,7 +3,7 @@ body{
 }
 
 #wrap{
-	width: 800px;
+	width: 900px;
 	margin: 0px auto;
 }
 
@@ -29,9 +29,9 @@ body{
 
 .banner_square{
 	margin-left: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 150px;
 	float: left;
-	width:350px;
+	width:400px;
 }
 
 .banner_square textarea {
@@ -39,6 +39,11 @@ body{
 	width: 310px;
 }
 
+#wrap .facebookz {
+	width: 800px;
+}
+
+#wrap .facebookz textarea {width: 685px;}
 
 
 #wrap textarea {
