@@ -555,7 +555,7 @@ a:hover {text-decoration:underline;}
 
 .container{
 	clear: both;
-    width:825px;
+    width:824px;
     margin:0 auto;
     position:relative;
     color:#fff;
@@ -670,7 +670,7 @@ a:hover {text-decoration:underline;}
 	width: 838px; 
 	height: 74px;
 	padding-top: 13px;
-	margin-left: -40px;
+	margin-left: -43px;
 }
 .container .date span {
 	background: #d96e00; 
