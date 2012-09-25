@@ -1,5 +1,7 @@
 body{
 	background: url(images/wood2.png);
+	font-family: "Helvetica", arial, sans-serif;
+	
 }
 
 #wrap{
@@ -44,6 +46,21 @@ body{
 	padding-left: 40px;
 }
 
+#wrap .facebookz a span {
+	width: 686px;
+	cursor: pointer;
+	background: rgba(0,0,0, .50);
+	color: #fff;
+	padding: 10px;
+	display: block;
+	float: left;
+	z-index: 99;
+	position: relative;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+	
 #wrap .facebookz textarea {width: 685px;}
 
 
