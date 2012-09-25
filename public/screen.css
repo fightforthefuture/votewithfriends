@@ -1350,3 +1350,43 @@ a:hover {text-decoration:underline;}
     height:100%;
 }
 #footer em.alignleft{margin:13px 28px 0 0;}
+
+#loseit {display: none;}
+
+
+/* PLEASE TO BE DELETING AFTER TUESDAY */
+
+#loseit {
+	display: block;
+	float: right;
+	margin-right: -60px;
+	margin-top: 60px;
+}
+
+#loseit p#getthecode {
+	display: block;
+	background: url(/images/getcode.png) no-repeat;
+	width: 223px;
+	height: 149px;
+	cursor: pointer;
+	text-indent: -9999px;
+	margin-bottom: 20px;
+}
+
+#loseit p#getbanners a {
+	display: block;
+	background: url(/images/grabbanners.png) no-repeat;
+	width: 223px;
+	height: 149px;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+
+body #voterreg_frame {
+    margin: 0 0 0 -180px !important;
+}
+
+body .banners {display: none;}
+body #code {display: none;}
+
+body .inner .container {margin-top: 500px; }

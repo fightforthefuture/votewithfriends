@@ -81,6 +81,13 @@
         setInterval(setTime, 1000);
 
 
+
+		$("#getthecode").click(function() {
+			$('#code').show();
+			$('#code').css("margin-right","-200px");
+			$('#loseit').hide();
+		});
+
     });
 
 })(jQuery);
