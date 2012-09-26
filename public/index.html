@@ -21,30 +21,6 @@
 
 
 
-	 <script type="text/javascript">
-	     window._idl = {};
-	     _idl.variant = "modal";
-	     _idl.campaign = "idl_launch";
-	     (function() {
-	         var idl = document.createElement('script');
-	         idl.type = 'text/javascript';
-	         idl.async = true;
-	         idl.src = 'https://members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&campaign=' + (_idl.campaign || '') + '&variant=' + (_idl.variant || 'banner');
-	         document.getElementsByTagName('body')[0].appendChild(idl);
-	     })();
-	 </script>
-	 	
-	
-	 	<script>
-	
-	 	function isValid(p) {
-	 	  var phoneRe = /^(()?\d{3}())?(-|\s)?\d{3}(-|\s)?\d{4}$/;
-	 	  var digits = p.replace(/\D/g, "");
-	 	  return (digits.match(phoneRe) !== null);
-	 	}
-	
-	 	</script>
-
 
 
 <!-- Twitter share -->
@@ -115,7 +91,7 @@
 				         <button data-append="&lt;div id=&quot;voterreg_placeholder&quot;>&lt;/div>" data-info="Add this where you'd like the widget to appear. The widget is currently 320 x 450 PX">Widget</button>
 				         <button data-append="" data-info="Add this before your closing &lt;/body> tag.">Modal Window</button>
 				         <p data-append-info="true"></p>
-				     </ul>
+					 </div>
 				     <textarea>&lt;script src="//widget.internetvotes.org/widget/include.js" type="text/javascript" async="async" defer="defer"&gt;&lt;/script&gt;</textarea>
 				 </section>
                 
@@ -382,10 +358,10 @@
         </footer>
 
         <script src="/js/jquery.js" type="text/javascript" charset="utf-8"></script>
-        <script src="/js/script.js" type="text/javascript" charset="utf-8"></script>
-        <script type="application/javascript" src="http://fftf-ips.heroku.com/?callback=getip"></script>
-        <script src="//widget.internetvotes.org/widget/include.js" type="text/javascript" async="async" defer="defer"></script>
-		
+                  <script src="/js/script.js" type="text/javascript" charset="utf-8"></script>
+                  <script type="application/javascript" src="http://fftf-ips.heroku.com/?callback=getip"></script>
+                  <script src="//widget.internetvotes.org/widget/include.js" type="text/javascript" async="async" defer="defer"></script>
+          		
 		<script type="text/javascript">
 
 		  var _gaq = _gaq || [];

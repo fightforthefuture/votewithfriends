@@ -1359,7 +1359,7 @@ a:hover {text-decoration:underline;}
 
 /* PLEASE TO BE DELETING AFTER TUESDAY */
 
-/*#loseit {
+#loseit {
 	display: block;
 	float: right;
 	margin-right: -60px;
@@ -1387,10 +1387,10 @@ a:hover {text-decoration:underline;}
 
 body #voterreg_frame {
     margin: 0 0 0 -180px !important;
+	
 }
 
 body .banners {display: none;}
 body #code {display: none;}
 
 body .inner .container {margin-top: 500px; }
-*/
