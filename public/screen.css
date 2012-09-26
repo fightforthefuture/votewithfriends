@@ -251,13 +251,16 @@ body > header{
 		color: #fff;
 	}
 
-p.banners {
+p.banners a {
+	display: block;
+	background: url(/images/grabbanners.png) no-repeat;
+	width: 223px;
+	height: 149px;
+	cursor: pointer;
+	text-indent: -9999px;
 	float: right;
-	margin-top: -220px;
 	clear: right;
-	width: 170px;
-	text-align: center;
-	margin-right: 20px;
+	margin-top: -200px;
 }
 
 p.banners a {
@@ -1356,7 +1359,7 @@ a:hover {text-decoration:underline;}
 
 /* PLEASE TO BE DELETING AFTER TUESDAY */
 
-#loseit {
+/*#loseit {
 	display: block;
 	float: right;
 	margin-right: -60px;
@@ -1390,3 +1393,4 @@ body .banners {display: none;}
 body #code {display: none;}
 
 body .inner .container {margin-top: 500px; }
+*/
