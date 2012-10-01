@@ -84,7 +84,9 @@
 
 		$("#getthecode").click(function() {
 			$('#code').show();
-			$('#code').css("margin-right","-200px");
+			$('#code').css("margin-right","0px");
+			$('body #voterreg_frame').css("margin-right", "-50px !important");
+			// -180px
 			$('#loseit').hide();
 		});
 
