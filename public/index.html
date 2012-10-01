@@ -6,6 +6,16 @@
 	<link href='http://fonts.googleapis.com/css?family=Playball&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/main.js"></script>
+	
+	
+	<meta property="og:title" content="Register to vote before it's too late." />
+	<meta property="og:description" content="I just took 5 seconds to register and pledge to vote in the name of a free and open internet -- can you do it to?" />
+	<meta property="og:image" content="http://www.internetvotes.org/images/fb-share.png" />
+	<meta property="og:url" content="http://fb.internetvotes.org" />
+	<meta property="og:type" content="article" />
+	<meta property="fb:admins" content="678090273"/>
+			
+			
 </head>
 <body>
 	
@@ -15,8 +25,19 @@
 				<h1 class="logo"><a href="#">vote with friends</a></h1>
 				<strong class="slogan">Help us get more Americans to vote than ever before.</strong>
 				<div class="box">
-					<p>Share this</p>
-					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.votewithfriends.net" data-text="Are you voting this year? I am. Register to vote, and then register your friends & followers: #InternetVotes" style="clear: both;">Tweet</a>
+					<div id="fb-root"></div>
+							<script>(function(d, s, id) {
+							  var js, fjs = d.getElementsByTagName(s)[0];
+							  if (d.getElementById(id)) return;
+							  js = d.createElement(s); js.id = id;
+							  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+							  fjs.parentNode.insertBefore(js, fjs);
+							}(document, 'script', 'facebook-jssdk'));</script>
+							<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+								<div class="fb-like" data-href="http://fb.internetvotes.org" data-send="true" data-layout="box_count" data-width="150" data-show-faces="true" style="margin-bottom: 5px;"></div>
+								
+								<br />
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://fb.votewithfriends.net" data-text="I just took 5 seconds to register and pledge to vote in the name of a free and open internet -- can you do it to?" style="clear: both;">Tweet</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
 			</div>
@@ -28,7 +49,7 @@
 				<div class="social-block">
 					<img src="images/img1.jpg" alt="" width="733" height="274" >
 					<div class="text-holder">
-						<a href="#" class="btn"><span class="ico-facebook">Go see who's voting</span></a>
+						<a href="https://apps.facebook.com/220561354738022/" class="btn"><span class="ico-facebook">Go see who's voting</span></a>
 						<p>See which of your friends have never voted... if they're registered or going to vote in 2012, and mobilize them into "voting blocks". On election day, know which of your friends actually voted!</p>
 					</div>
 				</div>
@@ -41,7 +62,7 @@
 					    <form action="http://nt.salsalabs.com/save">
 									
 	                        <input type="hidden" name="object" value="supporter" />
-	                        <input type="hidden" name="tag" value="votewithfriends.net" />
+	                        <input type="hidden" name="tag" value="fb.votewithfriends.net" />
 	                        <input type="hidden" name="ip" id="signup_ip" />
 	                        <input type="hidden" name="user_agent" id="user_agent" />
 	                        <input type="hidden" name="email_trigger_KEYS" value="10" />
