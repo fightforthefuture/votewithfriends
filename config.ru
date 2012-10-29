@@ -8,8 +8,8 @@ use Rack::Static , :urls => {
     "/pledge/staging/" => "pledge/staging/index.html", 
     "/pledge/dev" => "pledge/dev/index.html", 
     "/pledge/dev/" => "pledge/dev/index.html",
-    "/pledge" => "infographic/index.html", 
-    "/pledge/" => "infographic/index.html", 
+    "/infographic" => "infographic/index.html", 
+    "/infographic/" => "infographic/index.html", 
 } , :root => "public"
 
 use Rack::Rewrite do
