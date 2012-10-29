@@ -1,0 +1,11 @@
+#wrap{
+	width: 1059px;
+	margin: 0px auto;
+	-moz-box-shadow: 0 3px 18px rgba(0,0,0,.75);
+	-webkit-box-shadow: 0 3px 18px rgba(0,0,0,.75);
+	box-shadow: 0 3px 18px rgba(0,0,0,.75);
+}
+
+body{
+	background-color: #2A2F36;
+}
