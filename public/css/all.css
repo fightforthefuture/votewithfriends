@@ -885,3 +885,23 @@ figure {
     position: relative;
     top: 28px;
 }
+
+#tag{
+width: 67px;
+height: 228px;
+position:fixed;
+left: 0px;
+z-index: 500;
+margin-top: -80px;
+background: url('/images/fftf_tag.png');
+}
+
+#cr_tag{
+width: 64px;
+height: 228px;
+position:fixed;
+left: 0px;
+z-index: 500;
+margin-top: 70px;
+background: url('/images/cr_logo.png');
+}
